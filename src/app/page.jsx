@@ -1,5 +1,4 @@
-import SignUpScreen from "../sign-up-screen"
-
+import SignUpScreen from "../app/signup/page"
 export default function Home() {
-  return <SignUpScreen />
+  return <SignUpScreen/>
 }

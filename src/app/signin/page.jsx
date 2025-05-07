@@ -93,7 +93,7 @@ export default function SignInScreen() {
 
             <div className="mt-auto text-center text-gray-400 text-sm">
               Don't have an account?{" "}
-              <Link href="/sign-up" className="text-gray-300 hover:underline">
+              <Link href="/signup" className="text-gray-300 hover:underline">
                 Sign up
               </Link>
             </div>

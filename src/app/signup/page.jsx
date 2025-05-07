@@ -28,7 +28,7 @@ export default function SignUpScreen() {
     <div className="flex h-screen w-full bg-gray-800">
       <div className="relative m-auto w-[1000px] h-[600px] rounded-3xl overflow-hidden bg-gray-900 flex">
         {/* Left side - Form */}
-        <div className="w-1/2 p-12 flex flex-col">
+        <div className="lg:w-1/2 p-12 flex flex-col">
           {/* Logo and Navigation */}
           <div className="flex items-center justify-between mb-16">
             <div className="flex items-center">
@@ -53,7 +53,7 @@ export default function SignUpScreen() {
             </h1>
             <div className="text-gray-400 text-sm mb-8">
               Already A Member?{" "}
-              <Link href="/sign-in" className="text-blue-500 hover:underline">
+              <Link href="/signin" className="text-blue-500 hover:underline">
                 Log In
               </Link>
             </div>
@@ -146,18 +146,22 @@ export default function SignUpScreen() {
         </div>
 
         {/* Right side - Background Image */}
-        <div
-          className="w-1/2 bg-cover bg-center relative"
-          style={{ backgroundImage: "url('/placeholder.svg?height=600&width=500')" }}
-        >
-          {/* Decorative dotted line */}
-          <div className="absolute bottom-8 right-8">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 0 L20 40" stroke="white" strokeOpacity="0.2" strokeDasharray="2 2" />
-              <path d="M0 20 L40 20" stroke="white" strokeOpacity="0.2" strokeDasharray="2 2" />
-            </svg>
-          </div>
-        </div>
+        <div className="lg:w-1/2 sm:hidden relative">
+  {/* Replaced backgroundImage with img tag */}
+  <img 
+    src="https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1708023216/catalog/1520818437215236096/wzrgqfa0xbi8an2y4gnj.webp" 
+    alt="Background" 
+    className="w-full h-full object-cover absolute inset-0"
+  />
+  
+  {/* Your original dotted line SVG (unchanged) */}
+  <div className="absolute bottom-8 right-8">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 0 L20 40" stroke="white" strokeOpacity="0.2" strokeDasharray="2 2" />
+      <path d="M0 20 L40 20" stroke="white" strokeOpacity="0.2" strokeDasharray="2 2" />
+    </svg>
+  </div>
+</div>
       </div>
     </div>
   )
