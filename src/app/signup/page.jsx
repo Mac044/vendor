@@ -146,10 +146,10 @@ export default function SignUpScreen() {
         </div>
 
         {/* Right side - Background Image */}
-        <div className="lg:w-1/2 sm:hidden relative">
+        <div className="lg:w-1/2 relative">
   {/* Replaced backgroundImage with img tag */}
   <img 
-    src="https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1708023216/catalog/1520818437215236096/wzrgqfa0xbi8an2y4gnj.webp" 
+    src="https://feedthemwisely.com/wp-content/uploads/2020/02/fast-food-restaurant-antibiotic-policies-489x700.png.webp" 
     alt="Background" 
     className="w-full h-full object-cover absolute inset-0"
   />

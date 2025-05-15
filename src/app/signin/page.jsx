@@ -26,7 +26,7 @@ export default function SignInScreen() {
     <div className="flex h-screen w-full bg-gray-800">
       <div className="relative m-auto w-[1000px] h-[600px] rounded-3xl overflow-hidden bg-gray-900 flex">
         {/* Left side - Form */}
-        <div className="w-1/2 p-12 flex flex-col">
+        <div className="sm:w-1/2 p-12 flex flex-col">
           {/* Window Controls */}
           <div className="flex gap-2 mb-16">
             <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
@@ -101,24 +101,13 @@ export default function SignInScreen() {
         </div>
 
         {/* Right side - Space Theme */}
-        <div className="w-1/2 bg-black flex items-center justify-center relative">
+        <div className="w-1/2 hidden sm:block bg-black flex items-center justify-center relative">
           {/* Space theme with planets */}
           <div className="relative w-full h-full">
             {/* Small planet */}
-            <div className="absolute top-[25%] right-[30%] w-8 h-8 rounded-full bg-gradient-to-b from-blue-200 to-blue-400"></div>
-
-            {/* Larger planet */}
-            <div className="absolute top-[60%] left-[40%] w-20 h-20 rounded-full bg-gradient-to-b from-blue-200 to-blue-400"></div>
-
-            {/* Vertical lines */}
-            <div className="absolute top-[10%] left-[50%] h-[30%] w-[1px] bg-gray-700"></div>
-            <div className="absolute top-[50%] right-[30%] h-[40%] w-[1px] bg-gray-700"></div>
-
-            {/* Stars */}
-            <div className="absolute top-[20%] left-[30%] w-1 h-1 bg-white rounded-full"></div>
-            <div className="absolute top-[40%] right-[40%] w-1 h-1 bg-white rounded-full"></div>
-            <div className="absolute bottom-[30%] left-[20%] w-1 h-1 bg-white rounded-full"></div>
-            <div className="absolute bottom-[10%] right-[20%] w-1 h-1 bg-white rounded-full"></div>
+            <img src="https://feedthemwisely.com/wp-content/uploads/2020/02/fast-food-restaurant-antibiotic-policies-489x700.png.webp"
+             alt="Space theme" 
+             className="w-full h-full object-cover" />
 
             {/* Logo at bottom */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white font-bold">comet</div>
