@@ -24,21 +24,15 @@ export default function Signup({ setShowLogin }) {
   }
 
   return (
-    <div className="lg:w-1/2 p-12 flex flex-col">
+    <div className="lg:w-1/2 p-12 flex flex-col ">
       {/* Logo and Navigation */}
-      <div className="flex items-center justify-between mb-16">
-        <div className="flex items-center">
-          <div className="w-8 h-8 bg-blue-500 rounded-full mr-2"></div>
-          <span className="text-white font-medium">Anywhere app</span>
-        </div>
-      </div>
 
       {/* Form Content */}
       <div className="flex-1">
-        <h1 className="text-white text-3xl font-bold mb-1">Create new account</h1>
+        <h1 className=" text-black text-3xl font-bold mb-1">Create new account</h1>
 
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="grid grid-cols-2  gap-4 mb-4">
             <div>
               <label htmlFor="firstName" className="sr-only">
                 First Name
@@ -114,7 +108,7 @@ export default function Signup({ setShowLogin }) {
               Create account
             </button>
           </div>
-          <div className="text-gray-400 text-sm mt-2 mb-8">
+          <div className=" text-black text-sm mt-2 mb-8">
             Already A Member?{" "}
             <span className="text-blue-500 hover:underline cursor-pointer" onClick={() => setShowLogin(true)}>
               Log In

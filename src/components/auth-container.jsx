@@ -8,8 +8,8 @@ export default function AuthContainer() {
   const [showLogin, setShowLogin] = useState(false)
 
   return (
-    <div className="flex h-screen w-full bg-gray-800">
-      <div className="relative m-auto w-[1000px] h-[600px] rounded-3xl overflow-hidden bg-gray-900 flex">
+    <div className="flex h-screen w-full bg-gradient-to-br from-yellow-200 to-orange-300">
+      <div className="relative m-auto w-[1000px] h-screen sm:h-auto lg:h-[600px] lg:rounded-3xl overflow-hidden bg-yellow-100 shadow-lg flex ">
         {/* Left side - Form */}
         {showLogin ? <Signin setShowLogin={setShowLogin} /> : <Signup setShowLogin={setShowLogin} />}
 

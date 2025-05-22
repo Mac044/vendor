@@ -22,23 +22,18 @@ export default function Signin({ setShowLogin }) {
   }
 
   return (
-    <div className="lg:w-1/2 p-12 flex flex-col">
+    <div className="lg:w-1/2 w-full p-12 flex flex-col">
       {/* Logo and Navigation */}
-      <div className="flex items-center justify-between mb-16">
-        <div className="flex items-center">
-          <div className="w-8 h-8 bg-blue-500 rounded-full mr-2"></div>
-          <span className="text-white font-medium">Anywhere app</span>
-        </div>
-      </div>
+
 
       {/* Form Content */}
       <div className="flex-1">
-        <h1 className="text-white text-3xl font-bold mb-1">Sign in</h1>
-        <p className="text-gray-400 mb-8">Please enter your details to sign in</p>
+        <h1 className="text-black text-3xl font-bold mb-1">Sign in</h1>
+        <p className=" text-black-400 mb-8">Please enter your details to sign in</p>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-400 text-sm mb-2">
+            <label htmlFor="email" className="block text-black text-sm mb-2">
               Your email
             </label>
             <input
@@ -54,10 +49,10 @@ export default function Signin({ setShowLogin }) {
 
           <div className="mb-8">
             <div className="flex justify-between mb-2">
-              <label htmlFor="password" className="block text-gray-400 text-sm">
+              <label htmlFor="password" className="block text-black text-sm">
                 Password
               </label>
-              <span className="text-gray-400 text-sm hover:text-gray-300 cursor-pointer">Forgot password?</span>
+              <span className="text-black text-sm hover:text-gray-300 cursor-pointer">Forgot password?</span>
             </div>
             <div className="relative">
               <input
@@ -81,12 +76,12 @@ export default function Signin({ setShowLogin }) {
 
           <button
             type="submit"
-            className="w-full py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+            className="w-full py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors flex-1"
           >
             Sign in
           </button>
 
-          <div className="text-gray-400 text-sm mt-4">
+          <div className=" text-black text-sm mt-4">
             Don't have an account?{" "}
             <span className="text-blue-500 hover:underline cursor-pointer" onClick={() => setShowLogin(false)}>
               Sign up
