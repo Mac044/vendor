@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import Signup from "./signup"
-import Signin from "./signin"
+import Signup from "./Signup.jsx"
+import Signin from "./signin.jsx"
 
 export default function AuthContainer() {
   const [showLogin, setShowLogin] = useState(false)
