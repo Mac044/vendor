@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Signup from "./Signup.jsx"
-import Signin from "./signin.jsx"
+import Signin from "./Signin.jsx"
 
 export default function AuthContainer() {
   const [showLogin, setShowLogin] = useState(false)
